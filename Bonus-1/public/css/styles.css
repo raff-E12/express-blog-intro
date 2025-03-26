@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+:root{
+    --color-1: #FDFCEC;
+    --color-2: #BBBD2D;
+    --color-3: #254038;
+    --color-4: #667302;
+}
+
+#header-sc{
+    background-color: var(--color-1);
+    padding: 13px;
+    text-transform: capitalize;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+#header-sc .navbar-brand{
+    font-weight: 900;
+    font-size: 1.50em;
+    text-transform: uppercase;
+}
+
+
+#header-sc #navbarNavAltMarkup .nav-link{
+    position: relative;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+#header-sc #navbarNavAltMarkup .nav-link::after{
+    content: "";
+    position: absolute;
+    padding: 1px;
+    width: 100%;
+    height: 16px;
+    bottom: -20px;
+    left: 0;
+    background-color: #BBBD2D;
+    transition: all ease-in .10s;
+}
+
+#header-sc #navbarNavAltMarkup{
+    justify-content: flex-end;
+    font-size: 1.10em;
+    color: var(--color-3);
+    font-weight: 900;
+}
+
+#header-sc #navbarNavAltMarkup .nav-link:hover{
+    color: var(--color-2);
+}
+
+#header-sc #navbarNavAltMarkup .nav-link:hover::after{
+    bottom: -10px;
+}
+
+#header-sc #navbarNavAltMarkup .btn.btn-link{
+    border: 2px solid var(--color-3);
+    width: 110px;
+    font-size: .90em;
+    text-align: center;
+    align-items: center;
+    color: var(--color-3);
+    text-decoration: none;
+    justify-content: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+@media (min-width: 400px) and (max-width: 991px) {
+    #header-sc #navbarNavAltMarkup .nav-link:hover{
+        color: var(--color-2);
+    }
+
+    #header-sc #navbarNavAltMarkup{
+        padding: 20px;
+    }
+    
+    #header-sc #navbarNavAltMarkup .nav-link::after{
+       display: none;
+    }
+
+    #header-sc #navbarNavAltMarkup .btn.btn-link{
+        width: 60%;
+        margin: 0;
+        align-self: center;
+    }
+}
+
+#hero-sc{
+    background-image: url("../imgs/pasta_barbabietola.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    position: relative;
+}
+
+#hero-sc::after{
+    content: "";
+    width: 100%;
+    background-color: #2540384a;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(2px);
+    height: 500px;
+}
+
+#hero-sc .text-hero{
+    z-index: 10;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    text-transform: capitalize;
+    color: var(--color-1);
+    font-weight: 900;
+    padding: 10px;
+}
+
+#hero-sc .text-hero h2{
+    font-size: 2.2em;
+    font-weight: 900;
+}
+
+#hero-sc .text-hero p{
+    font-size: 1.1em;
+}
+
+#hero-sc .text-hero h2, #hero-sc .text-hero p{
+    margin: 0;
+}
+
+#hero-sc .btn.d-flex.btn-hero{
+    background-color: var(--color-2);
+    border-radius: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 10px;
+    color: var(--color-1);
+}
+
+#hero-sc .btn.d-flex.btn-hero:hover{
+    background-color: var(--color-4);
+}
+
+#art-sc{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#art-sc .art-text{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#art-sc .art-text h2{
+    font-weight: 900;
+    font-size: 1.70em;
+}
+
+.container-fluid.art-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.article .img-art{
+    width: 40%;
+    height: 200px;
+}
+
+.article #img-1{
+    background-image: url("../imgs/ciambellone.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.article #img-2{
+    background-image: url("../imgs/cracker_barbabietola.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.article #img-3{
+    background-image: url("../imgs/pane_fritto_dolce.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.article #img-4{
+    background-image: url("../imgs/pasta_barbabietola.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.article #img-5{
+    background-image: url("../imgs/torta_paesana.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container-fluid.art-box .article{
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.art-sc.d-flex.container-text-art{
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+.art-sc.d-flex.container-text-art h4, .art-sc.d-flex.container-text-art p{
+    margin: 0;
+}
+
+#art-sc .art-sc h4{
+    font-size: 1.42em;
+    font-weight: 900;
+}
+
+.line{
+    width: 100%;
+    padding: 1px;
+    border-radius: 10px;
+    background-color: var(--color-3);
+}
+
+.footer-sc{
+    background-color: var(--color-3);
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-1);
+    font-weight: 900;
+}

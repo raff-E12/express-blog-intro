@@ -1,0 +1,31 @@
+{
+    "0": {
+        "src": "../imgs/ciambellone.jpeg",
+        "title": "Ciambellone",
+        "content": "Una bella Ciambella."
+    },
+
+    "1" : {
+        "src": "../imgs/cracker_barbabietola.jpeg",
+        "title": "Cracker alla Barbabietola",
+        "content": "Un Bel Dolce Cracker."
+    },
+    
+    "2": {
+        "src": "../imgs/pane_fritto_dolce.jpeg",
+        "title": "Pane Fritto Dolce",
+        "content": "Il Pane del Bel Mattino."
+    },
+
+    "3": {
+        "src": "../imgs/pasta_barbabietola.jpeg",
+        "title": "Pasta Barbabietola",
+        "content": "Un MezzoGiorno con una Bella Pasta."
+    },
+
+    "4":{
+        "src": "../imgs/torta_paesana.jpeg",
+        "title": "Torta Paesana",
+        "content": "Torta Di Paese, Con Il Ben Servito."
+    }
+}
