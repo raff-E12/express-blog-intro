@@ -44,7 +44,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/bacheca", (req, res) =>{
-    // req.status(300).type("json").send(posts);
+    res.json(posts);
     let html = `
         <!DOCTYPE html>
         <html lang="it">
