@@ -170,14 +170,24 @@ app.post("/posts", (req, res) => {
     console.log(">> Post Aggiunto..")
     const new_posts = body;
     posts_index.push(new_posts);
-    res.status(201).send(new_posts);
+    res.status(201).send("Oggetto Aggiunto.");
 })
 
 app.delete("/posts/:id", (req, res) =>{
     const { params: id } = req;
     const index_id = parseInt(String(id.id).slice(-1));
     posts_index.splice(index_id);
-    return res.send(id);
+    return res.send("Oggetto Rimosso");
 })
+
+// app.patch("/posts/:id", (req, res) => {
+//     const { body, params: { id } } = req;
+//     const id_index = parseInt(id.slice(-1));
+//     console.log(id_index)
+//     for (let i = 0; i < posts_index.length; i++) {
+//         console.log(posts_index[i] === id_index);
+//     }
+//     res.status(201).send("La lista con l'oggetto richiesto è stata modificata.")
+// })
 
 app.listen(port, () => { return console.log(">> Ecco il server avviato http://localhost:3000")})
